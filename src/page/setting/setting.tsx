@@ -138,15 +138,13 @@ export default function Setting_page() {
           }}>{t('log')}</Link>): {alistInfo.version.version}
           <br />
         </Card>
-{/*         <Card title={t('about')} style={{}} size='small'>
+{/*          <Card title={t('about')} style={{}} size='small'>
           <Row >
             <Col flex={'auto'} >
               {t('version')}: v{version}
               <br />
               {t('about_text')}
               <br />
-              {/* {t('technology_stack')}:Tauri,TypeScript,Vite,React,Arco Design,Rust
-              <br /> */}
               Copyright © 2024-Present
               <Link onClick={() => { openUrlInBrowser(roConfig.url.vhbBlog) }}>VirtualHotBar </Link>
             </Col>
