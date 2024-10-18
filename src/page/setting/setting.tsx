@@ -138,7 +138,7 @@ export default function Setting_page() {
           }}>{t('log')}</Link>): {alistInfo.version.version}
           <br />
         </Card>
-        <Card title={t('about')} style={{}} size='small'>
+{/*         <Card title={t('about')} style={{}} size='small'>
           <Row >
             <Col flex={'auto'} >
               {t('version')}: v{version}
@@ -159,7 +159,7 @@ export default function Setting_page() {
               <br />
             </Col>
           </Row>
-        </Card>
+        </Card> */}
         <Card title={t('tools')} style={{}} size='small'>
           <Space>
             <Button onClick={async () => { await set_devtools_state(true) }}>{t('devtools')}</Button>
