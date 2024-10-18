@@ -6,7 +6,7 @@ import { invoke } from '@tauri-apps/api/core';
 import { app } from "@tauri-apps/api";
 import { nmConfig, osInfo, roConfig } from "../services/config";
 import { Aria2 } from "../utils/aria2/aria2";
-import { checkUpdate } from "./update/update";
+// import { checkUpdate } from "./update/update";
 import { getAvailablePorts, getWinFspInstallState, installWinFsp, showPathInExplorer } from "../utils/utils";
 import { t } from "i18next";
 import { FilterType, StorageInfoType, StorageParamItemType } from "../type/controller/storage/info";
