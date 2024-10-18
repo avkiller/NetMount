@@ -7,9 +7,9 @@ interface NMConfig {
         lists: MountListItem[]
     },
     task: TaskListItem[],
-    api: {
-        url: string
-    },
+    // api: {
+    //     url: string
+    // },
     settings: {
         themeMode: 'dark' | 'light' | 'auto' | string,
         startHide: boolean,
