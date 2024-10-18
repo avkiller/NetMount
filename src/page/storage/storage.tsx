@@ -51,9 +51,9 @@ function Storage_page() {
                         <Button onClick={reupStorage} >{t('refresh')}</Button>
                     </Space>
                 </Col>
-                <Col flex={'4rem'} style={{ textAlign: 'right' }}>
+{/*                 <Col flex={'4rem'} style={{ textAlign: 'right' }}>
                     <Button title={t('help')} icon={<IconQuestionCircle />} onClick={() => { openUrlInBrowser(roConfig.url.docs + '/docs/storage-mgr') }} />
-                </Col>
+                </Col> */}
             </Row>
             <div style={{ height: "calc(100% - 3rem)" }}>
                 <br />
