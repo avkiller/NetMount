@@ -14,7 +14,6 @@ import { startTaskScheduler } from "./task/task"
 import { autoMount } from "./task/autoMount"
 import { setThemeMode } from "./setting/setting"
 import { setLocalized } from "./language/localized"
-import { checkNotice } from "./update/notice"
 import { updateStorageInfoList } from "./storage/allList"
 import { startAlist, stopAlist } from "../utils/alist/process"
 import { homeDir } from "@tauri-apps/api/path"
@@ -62,8 +61,8 @@ async function init(setStartStr: Function) {
     await startRclone()
     await startAlist()
 
-    setStartStr(t('get_notice'))
-    await checkNotice()
+    // setStartStr(t('get_notice'))
+    // await checkNotice()
 
     startUpdateCont()
 
