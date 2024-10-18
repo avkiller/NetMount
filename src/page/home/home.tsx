@@ -4,7 +4,7 @@ import { Alert, Avatar, Button, Card, Descriptions, Grid, Link, Modal, Notificat
 import { Test } from "../../controller/test"
 import { rcloneInfo } from '../../services/rclone'
 import { hooks } from '../../services/hook';
-import { checkUpdate } from '../../controller/update/update';
+//import { checkUpdate } from '../../controller/update/update';
 import { getVersion } from '@tauri-apps/api/app';
 import * as shell from '@tauri-apps/plugin-shell';
 import { formatETA, formatSize } from '../../utils/utils';
@@ -40,22 +40,22 @@ function Home_page() {
       nmConfig.notice.displayed = true
     }
 
-    if (!checkedUpdate) {
-      checkUpdate(async (info,localVersions) => {
-        modal.confirm!({
-          title: t('update_available'),
-          content: <>
-            {`${t('current_version')}:${localVersions} , ${t('latest_version')}:${info.name}`}
-            <br />
-            {t('goto_the_website_get_latest_version_ask')}
-          </>,
-          onOk: () => {
-            shell.open(info.website!)
-          },
-        })
-      })
-      checkedUpdate = true;
-    }
+    // if (!checkedUpdate) {
+    //   checkUpdate(async (info,localVersions) => {
+    //     modal.confirm!({
+    //       title: t('update_available'),
+    //       content: <>
+    //         {`${t('current_version')}:${localVersions} , ${t('latest_version')}:${info.name}`}
+    //         <br />
+    //         {t('goto_the_website_get_latest_version_ask')}
+    //       </>,
+    //       onOk: () => {
+    //         shell.open(info.website!)
+    //       },
+    //     })
+    //   })
+    //   checkedUpdate = true;
+    // }
 
   }, [])
 
