@@ -3,7 +3,7 @@ import { NMConfig, OSInfo } from "../type/config"
 import { mergeObjects, randomString } from "../utils/utils"
 
 const roConfig = {
-    //url: {
+    url: {
        website: 'https://www.netmount.cn',
     //    docs: 'https://api.hotpe.top/API/NetMount/GoLink?id=docs&path=',
        rclone: 'https://github.com/rclone/rclone',
@@ -11,7 +11,7 @@ const roConfig = {
     //    to: (id: string, path: string = '') => { return 'https://api.hotpe.top/API/NetMount/GoLink?id=' + id + '&path=' + path },
     //    vhbBlog: 'https://blog.hotpe.top'
 
-    //},
+    },
     env: {
         path: {
             homeDir: '~'
