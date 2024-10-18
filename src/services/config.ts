@@ -4,10 +4,10 @@ import { mergeObjects, randomString } from "../utils/utils"
 
 const roConfig = {
     //url: {
-    //    website: 'https://www.netmount.cn',
+       website: 'https://www.netmount.cn',
     //    docs: 'https://api.hotpe.top/API/NetMount/GoLink?id=docs&path=',
-    //    rclone: 'https://github.com/rclone/rclone',
-    //    alist: 'https://github.com/alist-org/alist',
+       rclone: 'https://github.com/rclone/rclone',
+       alist: 'https://github.com/alist-org/alist',
     //    to: (id: string, path: string = '') => { return 'https://api.hotpe.top/API/NetMount/GoLink?id=' + id + '&path=' + path },
     //    vhbBlog: 'https://blog.hotpe.top'
 
