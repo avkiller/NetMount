@@ -80,10 +80,6 @@ function Mount_page() {
             <Button onClick={() => { reupMount() }}>{t('refresh')}</Button>
           </Space>
         </Col>
-       /* <Col flex={'4rem'} style={{ textAlign: 'right' }}>
-          <Button title={t('help')} icon={<IconQuestionCircle />} onClick={() => { openUrlInBrowser(roConfig.url.docs + '/docs/storage-mount') }} />
-        </Col>
-       */
       </Row>
 
       <div style={{ height: "calc(100% - 3rem)" }}>
