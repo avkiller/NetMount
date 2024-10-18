@@ -176,14 +176,14 @@ function AddStorage_page() {
                 <br />
 
                 <Row style={{ width: '100%' }}>
-                    <Col flex={'4rem'}>
+{/*                     <Col flex={'4rem'}>
                         <Button onClick={() => {
                             openUrlInBrowser(
                                 roConfig.url.to('docs-storage', '/' + (storageInfo.displayType || storageInfo.type).toLocaleLowerCase().split(' ').join('-') + '&framework=' + storageInfo.framework + '&lang=' + nmConfig.settings.language)
                             )
                         }}
                             type='text' icon={<IconQuestionCircle />}>{t('help_for_this_storage')}({t(storageInfo.label)}) </Button>
-                    </Col>
+                    </Col> */}
                     <Col flex={'auto'} style={{ textAlign: 'right' }}>
                         <Space>
                             {
